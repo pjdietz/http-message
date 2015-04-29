@@ -19,7 +19,7 @@ interface StreamInterface
      *
      * Warning: This could attempt to load a large amount of data into memory.
      *
-     * This method MUST NOT raise an exception in order to conform with PHP's
+     * This method MUST NOT raise an exception in order to conform with PHP's 
      * string casting operations.
      *
      * @see http://php.net/manual/en/language.oop5.magic.php#object.tostring
@@ -44,7 +44,7 @@ interface StreamInterface
     public function detach();
 
     /**
-     * Get the size of the stream if known
+     * Get the size of the stream if known.
      *
      * @return int|null Returns the size in bytes if known, or null if unknown.
      */
@@ -137,7 +137,7 @@ interface StreamInterface
      * Returns the remaining contents in a string
      *
      * @return string
-     * @throws \RuntimeException if unable to read or an error occurs while
+     * @throws \RuntimeException if unable to read or an error occurs while 
      *     reading.
      */
     public function getContents();
